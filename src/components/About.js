@@ -1,12 +1,12 @@
 import React from 'react';
 import Skills from "./Skills";
-import Flash from 'react-reveal/Flash';
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
     return (
         <section id="about" className="bg-gray-800 text-green-500 p-8">
             <div className="container mx-auto px-4 py-12">
-                <Flash>
+                <Fade mirror delay={300}>
                     <h1 className="text-4xl font-bold text-center mb-4">ABOUT ME</h1>
 
                     <p className="text-start text-white mb-12">
@@ -48,7 +48,7 @@ const About = () => {
                             <Skills/>
                         </div>
                     </div>
-                </Flash>
+                </Fade>
             </div>
         </section>
     );
