@@ -68,7 +68,7 @@ const Projects = () => {
                             <div key={index}
                                  className="bg-gray-200 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
                                 <div className="h-40 mb-4 flex items-center justify-center">
-                                    <img loading={'lazy'} src={project.image} alt={project.title} loading={'lazy'}
+                                    <img  src={project.image} alt={project.title} loading={'lazy'}
                                          className="h-full w-full object-cover rounded-lg"/>
                                 </div>
                                 <h2 className="text-xl font-semibold mb-2">{project.title}</h2>

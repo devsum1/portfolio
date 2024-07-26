@@ -1,7 +1,6 @@
 import React from 'react';
 import {ReactTyped} from "react-typed";
 import Fade from 'react-reveal/Fade';
-import pp from "../assets/images/profile-pic.png";
 
 const Hero = () => {
     return (
