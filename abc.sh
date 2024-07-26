@@ -37,7 +37,7 @@ const Header = () => {
     <header className="bg-white text-black p-4 shadow-md fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-lg">
-          <img src="path_to_your_logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+          <img loading={'lazy'} src="path_to_your_logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
           Sumit Singh
         </div>
         <nav>

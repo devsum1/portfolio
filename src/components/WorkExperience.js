@@ -22,38 +22,37 @@ const experiences = [
         link: 'https://www.bitcs.in/'
     },
     {
-        "role": "Student",
-        "company": "Maharishi Markandeshwar Deemed to be University, Ambala, Haryana",
-        "duration": "Jun 2017 - Jun 2021",
-        "description": "Studied Bachelor of Technology (CSE) with a focus on developing skills in software development, algorithms, and data structures.",
-        "icon": collegeLogo,
+        role: "Student",
+        company: "Maharishi Markandeshwar Deemed to be University, Ambala, Haryana",
+        duration: "Jun 2017 - Jun 2021",
+        description: "Specialized in software development, algorithms, and data structures.\n Completed an IoT certification through NPTEL.\n Runner-up in Smart India Hackathon (SIH) 2019.\n Winner of multiple inter-college coding competitions.",
+        icon: collegeLogo,
         link: 'https://www.mmumullana.org/'
     }
-
 ];
 
 const WorkExperience = () => {
     return (
-        <section id="work" className="bg-gray-900 text-gray-300 p-8">
-            <div className="container mx-auto px-4 py-12">
-                <h1 className="text-4xl font-bold text-center mb-12 text-green-500">JOURNEY SO FAR...</h1>
+        <section id="work" className="bg-gray-900 text-gray-300 p-4 sm:p-8">
+            <div className="container mx-auto px-4 py-8 sm:py-12">
+                <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-green-500">JOURNEY SO FAR...</h1>
                 <ul className="relative">
                     {experiences.map((exp, index) => (
                         <Fade right={index % 2 !== 0} left={index % 2 === 0} key={index}>
                             <li
-                                className={`mb-8 ml-12 flex items-center relative ${index % 2 === 0 ? 'justify-normal' : 'justify-end'}`}>
+                                className={`mb-8 flex flex-col sm:flex-row items-start sm:items-center relative ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}`}>
                                 {index % 2 !== 0 &&
-                                    <div className={`relative ${index % 2 === 0 ? '-left-4 mr-2' : 'left-0 ml-2'}`}>
+                                    <div className={` hidden sm:block relative ${index % 2 === 0 ? '-left-4 mr-2' : 'left-0 ml-2'}`}>
                                         <div
                                             className={`w-4 h-4 bg-gray-200 transform rotate-45 ${index % 2 === 0 ? '-rotate-225 translate-x-1/2' : 'rotate-45 translate-x-1/2'}`}></div>
                                     </div>}
-                                <div className={`w-5/12 p-4 bg-gray-200 rounded-lg shadow-lg text-gray-700`}>
-                                    <a className={'flex items-start justify-between'} href={exp.link}>
+                                <div className={`w-full sm:w-5/12 p-4 bg-gray-200 rounded-lg shadow-lg text-gray-700 ${index % 2 === 0 ? 'sm:ml-8' : 'sm:mr-8'}`}>
+                                    <a className="flex items-start justify-between" href={exp.link}>
                                         <div className="flex flex-col">
-                                            <h2 className="text-xl font-bold">{exp.role}</h2>
-                                            <p className="text-gray-700 hover:scale-200">{exp.company}</p>
+                                            <h2 className="text-lg sm:text-xl font-bold">{exp.role}</h2>
+                                            <p className="text-gray-700 hover:scale-105">{exp.company}</p>
                                         </div>
-                                        <img className={'w-10 h-10'} src={exp.icon} alt={'work_logo'}/>
+                                        <img loading={'lazy'} className="w-8 h-8 sm:w-10 sm:h-10" src={exp.icon} alt={`${exp.company}_logo`} />
                                     </a>
                                     <p className="text-gray-500 mt-2">{exp.duration}</p>
                                     {exp.description && (
@@ -65,7 +64,7 @@ const WorkExperience = () => {
                                     )}
                                 </div>
                                 {index % 2 === 0 &&
-                                    <div className={`relative ${index % 2 === 0 ? '-left-4 mr-2' : 'left-0 ml-2'}`}>
+                                    <div className={`hidden sm:block relative ${index % 2 === 0 ? '-left-4 mr-2' : 'left-0 ml-2'}`}>
                                         <div
                                             className={`w-4 h-4 bg-gray-200 transform rotate-45 ${index % 2 === 0 ? '-rotate-225 translate-x-1/2' : 'rotate-45 translate-x-1/2'}`}></div>
                                     </div>}
@@ -73,7 +72,7 @@ const WorkExperience = () => {
                         </Fade>
                     ))}
                     <div
-                        className="absolute h-full border-l-2 border-gray-200 top-0 left-1/2 transform -translate-x-1/2"></div>
+                        className="hidden sm:block absolute h-full border-l-2 border-gray-200 top-0 left-1/2 transform -translate-x-1/2"></div>
                 </ul>
             </div>
         </section>

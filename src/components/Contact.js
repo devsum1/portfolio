@@ -6,7 +6,7 @@ const Contact = () => {
         <section id="contact" className="bg-gray-900 text-gray-300 p-8">
             <Fade bottom>
             </Fade>
-            <div className="flex flex-col gap-y-10 justify-center items-center min-h-screen">
+            <div className="flex flex-col gap-y-10 justify-center items-center">
                 <h1 className="text-4xl font-bold text-center text-green-600 ">Wanna Talk ?</h1>
                 <Fade bottom>
                     <div className="w-full max-w-md p-8 space-y-6 bg-gray-800 shadow-lg rounded-lg">

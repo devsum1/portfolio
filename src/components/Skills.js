@@ -86,7 +86,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="bg-gray-800 p-8">
+        <section id="skills" className="bg-gray-800 sm:p-8">
             <div className="flex flex-wrap justify-center gap-2">
                 {skills.map((skill, index) => (
                     <div key={index} className="m-2 px-4 py-2 rounded-lg shadow-xl bg-gray-950 text-green-600 flex items-center">

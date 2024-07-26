@@ -15,7 +15,7 @@ import {FaMessage} from "react-icons/fa6";
 const SocialLinks = () => {
     return (
         <div
-            className="fixed left-0 top-1/3 transform -translate-y-1/2 bg-gray-900 text-gray-300 shadow-lg rounded-r-md flex flex-col p-4 gap-x-4 gap-y-6">
+            className="fixed z-10 left-0 top-1/3 transform -translate-y-1/2 bg-gray-900 text-gray-300 shadow-lg rounded-r-md flex flex-col p-4 gap-x-4 gap-y-6">
             <a href="https://www.linkedin.com/in/dev-sumit" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-4xl text-blue-400 hover:text-blue-600"/>
             </a>
