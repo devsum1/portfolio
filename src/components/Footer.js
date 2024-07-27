@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-green-500 p-8">
+        <footer className="bg-gray-900 text-green-500  sm:p-8 h-80 pt-10">
             <Fade bottom>
                 <div className="container mx-auto text-center">
                     <div className="mb-4">
