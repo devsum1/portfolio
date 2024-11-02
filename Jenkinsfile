@@ -4,7 +4,7 @@ pipeline {
     environment {
        S3_BUCKET_NAME = 'devsum-portfolio'
        S3_BUCKET_REGION = 'ap-south-1'
-        AWS_ACCESS_KEY_ID = credentials('aws-access-key-id-id')
+        AWS_ACCESS_KEY_ID = credentials('aws-access-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key-id')
     }
 
